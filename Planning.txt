@@ -1,0 +1,18 @@
+3 HTML Headers
+*every one needs to do at least 2 paragraph under their headers
+-JD Rules Past vs Present
+-SO Notable Players
+-ES History
+
+Use at 2 URL
+-ES
+
+Use 2 Images
+-make sure 2 alt attribute
+-SO
+
+CSS
+-1 Inline Style
+-1 CSS in the style tag of the head tag
+- Make use of CSS from an External CSS File
+-JD
