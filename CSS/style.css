@@ -21,6 +21,7 @@
   width: 15%;
   flex-wrap: wrap;
   text-align: center;
+  background-color: rgba(201,201,201,0.7)
 }
 
 .opener{
@@ -72,19 +73,21 @@
 dt {
   font-weight: bold;
   text-decoration: underline;
+  list-style-type: circle;
   text-align: center;
-  list-style-type: square;
+  
 }
 dd {
   margin: 3;
   padding: 0 0 0.5em 0;
   text-align: center;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 16px
 }
 
 h2{
   text-align: center;
-  font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
 }
 
 p {
@@ -94,7 +97,7 @@ p {
   margin-top: 10px;
   margin-bottom: 10px;
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  font-size: 20px
+  font-size: 16px
 }
 
 .rules{
@@ -107,6 +110,14 @@ p {
   margin: auto;
 }
 
+/* Notable Events */
+#ne_links{
+  background-color: rgba(201,201,201,0.7);
+  margin: 100px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  
+}
 /* HISTORY CSS */
 .GreekFootPlayer{
   float: right;
@@ -119,14 +130,58 @@ p {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  
+  width: 25%;
 }
+
 ul.soccer{
   list-style: "\26BD  ";
   list-style-position: outside;
   background-color: rgba(201,201,201,0.7);
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 16px;
+  margin: 100px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 h.list{
   text-decoration: underline;
   font-weight: bold;
 }
+
+/* Table */
+table.responsive {
+  border-collapse: collapse;
+  text-align: left;
+  font-family: Avenir, Roboto, Heveltica, sans-serif; 
+  display: table;
+  border-top-color: gray;
+  border-right-color: gray;
+  border-bottom-color: gray;
+  border-left-color: gray;
+}
+
+.responsive th {
+  text-align: inherit;
+  text-transform: uppercase;
+  
+}
+
+.responsive th, .responsive td {
+  border: 1px solid #999;
+  padding: 0.5em 0.75rem 0.2em;
+  vertical-align: top;
+  background-color: azure; 
+}
+
+.responsive img {
+  max-width: 100%;
+  height: auto;
+}
+
+.responsive{
+  position: absolute;
+  top: 20%;
+  left: 26%;
+  
+}
+
