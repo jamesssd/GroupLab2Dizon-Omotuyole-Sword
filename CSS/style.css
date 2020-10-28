@@ -70,19 +70,17 @@
 
 /* RULES CSS */
 /* Customizes List */
-dt {
-  font-weight: bold;
-  text-decoration: underline;
-  list-style-type: circle;
+ol{
   text-align: center;
-  
-}
-dd {
-  margin: 3;
-  padding: 0 0 0.5em 0;
-  text-align: center;
+  list-style-position: inside;
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  font-size: 16px
+  line-height: 2;
+}
+
+li{
+  text-align: center;
+  font-size: 16px;
+  display: wrap;
 }
 
 h2{
@@ -100,7 +98,8 @@ p {
   font-size: 16px
 }
 
-.rules{
+#rules{
+  padding: 70px;
   width: 60%;
   height: 50%;
   border: 3px solid white;
@@ -142,6 +141,12 @@ ul.soccer{
   margin: 100px;
   margin-top: 10px;
   margin-bottom: 10px;
+  line-height: 2em;
+  text-align: left;
+}
+.dates {
+  text-align: left;
+  font-weight: bold;
 }
 h.list{
   text-decoration: underline;
