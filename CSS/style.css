@@ -1,84 +1,71 @@
-/* MAIN HTML CSS */
-/* Dropdown Button */
-.dropbtn {
-  background-color: #4CAF50;
-  color: black;
-  padding: 16px;
+/* INDEX CSS */
+*{
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("/Images/Background/Soccer Field.jpg");
+  background-repeat: initial;
+  background-size: auto;   
+  padding: 50px, 50px, 50px, 50px;      
+}
+
+header{
+  font-size: 35px;
+  border-style: solid;
+  background-color: rgba(192, 192, 192, 0.3);
+}
+
+nav{
+  float: left;
+  width: 30%;
+  height: 200px;
   font-size: 16px;
-  border: none;
 }
 
-.group{
-  position: absolute;
-  top: 90%;  
-  right: 70%;
-  bottom: 10%;
-  
-}
-
-.link{
-  border: 2px solid black;
-  width: 15%;
-  flex-wrap: wrap;
+nav ul{
+  list-style-type: none;
   text-align: center;
-  background-color: rgba(201,201,201,0.7)
 }
 
-.opener{
+article{
+  float: left;
+  padding: 20px;
+  width: 70%;
+  height: 405px;
+  overflow: auto;
+  overflow-x: hidden;
+}
+
+section:after{
+  content: "";
+  display:table;
+  clear: both;
+}
+
+footer{  
   text-align: center;
-  margin: auto;
-  width: 100%;
-  top: 40%;
-  bottom: 50%;
-  position: absolute;
-  font-size: 22px;
+  padding: 5px;
+  font-size: 12px;
 }
 
-/* The container <div> - needed to position the dropdown content */
-.dropdown {
-  position: fixed;
-  display: inline-block;
-  top: 45%;
-  right: 50%;
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
 }
-
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-/* Links inside the dropdown */
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #ddd;}
-
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {display: block;}
-
-/* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {background-color: #3e8e41;}
 
 /* RULES CSS */
-/* Customizes List */
-ol{
+ol.rules{
   text-align: center;
   list-style-position: inside;
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 2;
 }
 
-li{
-  text-align: center;
+li.rules{
+  text-align: left;
   font-size: 16px;
   display: wrap;
 }
@@ -87,73 +74,67 @@ h2{
   text-align: center;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
 }
-
+ 
 p {
   text-align:center;
   margin: 100px;
-  background: rgba(201,201,201,0.7);
-  margin-top: 10px;
-  margin-bottom: 10px;
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  font-size: 16px
-}
+} 
 
-#rules{
-  padding: 70px;
-  width: 60%;
-  height: 50%;
-  border: 3px solid white;
-  display: flex;
-  flex-wrap: wrap;
-  background-color: rgba(201,201,201,0.7);
-  margin: auto;
-}
-
-/* Notable Events */
-#ne_links{
-  background-color: rgba(201,201,201,0.7);
-  margin: 100px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  
-}
 /* HISTORY CSS */
 .GreekFootPlayer{
   float: right;
+  padding: 6px;
+  margin: 6px;
+  width:125px;
+  height:175px;
+}
+
+.Cuju {
+  float: left;
+  padding: 6px;
+  margin: 6px;
   width:150px;
   height:200px;
-  
 }
 
 .FootballGameTicket{
-  display: block;
+  float: right;
   margin-left: auto;
   margin-right: auto;
-  width: 25%;
+  width: 50%;
+}
+
+.soccer{
+  background: rgba(201,201,201,0.7);
 }
 
 ul.soccer{
   list-style: "\26BD  ";
   list-style-position: outside;
-  background-color: rgba(201,201,201,0.7);
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: 16px;
-  margin: 100px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  line-height: 2em;
   text-align: left;
-}
+} 
+
+/* TABLE CSS */
 .dates {
   text-align: left;
   font-weight: bold;
 }
+
 h.list{
   text-decoration: underline;
   font-weight: bold;
 }
 
-/* Table */
+h3 {
+  padding-top:50px;
+  font-size: 200%;
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
 table.responsive {
   border-collapse: collapse;
   text-align: left;
@@ -166,12 +147,13 @@ table.responsive {
 }
 
 .responsive th {
-  text-align: inherit;
+  text-align: center;
   text-transform: uppercase;
   
 }
 
 .responsive th, .responsive td {
+  text-align: center;
   border: 1px solid #999;
   padding: 0.5em 0.75rem 0.2em;
   vertical-align: top;
@@ -183,10 +165,6 @@ table.responsive {
   height: auto;
 }
 
-.responsive{
-  position: absolute;
-  top: 20%;
-  left: 26%;
-  
+#events-imgs {
+  float: center;
 }
-
